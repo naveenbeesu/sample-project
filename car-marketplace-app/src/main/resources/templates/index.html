@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Car Marketplace</title>
+</head>
+<body>
+    <h1>Used Cars for Sale</h1>
+    <ul>
+        <li th:each="car : ${usedCars}">
+            <span th:text="${car.year}"></span>
+            <span th:text="${car.make}"></span>
+            <span th:text="${car.model}"></span>
+            - $<span th:text="${car.price}"></span>
+        </li>
+    </ul>
+
+    <h1>New Cars for Lease</h1>
+    <ul>
+        <li th:each="car : ${newCars}">
+            <span th:text="${car.year}"></span>
+            <span th:text="${car.make}"></span>
+            <span th:text="${car.model}"></span>
+            - $<span th:text="${car.price}"></span>
+        </li>
+    </ul>
+</body>
+</html>

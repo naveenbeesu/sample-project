@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Car Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="#buy">Buy a Car</a></li>
+                <li><a href="#lease">Lease a Car</a></li>
+                <li><a href="#sell">Sell Your Car</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="buy">
+            <h2>Buy a Car</h2>
+            <p>Explore our wide range of cars available for purchase.</p>
+            <button onclick="fetchCars()">View Cars</button>
+            <div id="car-list"></div>
+        </section>
+        <section id="lease">
+            <h2>Lease a Car</h2>
+            <p>Find the best leasing options for your next car.</p>
+        </section>
+        <section id="sell">
+            <h2>Sell Your Car</h2>
+            <p>List your car for sale and reach potential buyers.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Marketplace. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
